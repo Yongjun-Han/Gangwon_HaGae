@@ -1,9 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:gangwondog/controllers/login_provider.dart';
 import 'package:gangwondog/screens/splash/splash_screen.dart';
+import 'package:provider/provider.dart';
 
 void main() {
-  runApp(const ProviderScope(child: _App()));
+  runApp(
+    MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (context) => LoginNotifier()),
+      ],
+      child: const _App(),
+    ),
+  );
 }
 
 class _App extends StatelessWidget {

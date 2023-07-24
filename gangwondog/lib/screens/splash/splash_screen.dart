@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gangwondog/constants/color/colors.dart';
 import 'package:gangwondog/layouts/default_layout.dart';
 import 'package:gangwondog/screens/onboarding/onboarding_screen.dart';
 import 'package:loading_animation_widget/loading_animation_widget.dart';
@@ -35,22 +36,22 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return DefaultLayout(
-        bgColor: Colors.blueAccent,
+        bgColor: mainDark,
         child: SizedBox(
           width: MediaQuery.of(context).size.width,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Image.asset(
-                'lib/assets/logo/splash.png',
+                'lib/assets/logo/splash_logo.png',
                 width: MediaQuery.of(context).size.width / 3,
               ),
               const SizedBox(
-                height: 16,
+                height: 30,
               ),
               LoadingAnimationWidget.twoRotatingArc(
                 color: Colors.white,
-                size: 32,
+                size: 30,
               )
             ],
           ),
