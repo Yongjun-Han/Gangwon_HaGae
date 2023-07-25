@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gangwondog/controllers/login_provider.dart';
+import 'package:gangwondog/controllers/resgistration_provider.dart';
+import 'package:gangwondog/controllers/zoom_provider.dart';
 import 'package:gangwondog/screens/splash/splash_screen.dart';
 import 'package:provider/provider.dart';
 
@@ -7,7 +9,15 @@ void main() {
   runApp(
     MultiProvider(
       providers: [
-        ChangeNotifierProvider(create: (context) => LoginNotifier()),
+        ChangeNotifierProvider(
+          create: (context) => LoginNotifier(),
+        ),
+        ChangeNotifierProvider(
+          create: (context) => RegisterNotifier(),
+        ),
+        ChangeNotifierProvider(
+          create: (context) => ZoomNotifier(),
+        ),
       ],
       child: const _App(),
     ),
