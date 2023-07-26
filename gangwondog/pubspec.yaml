@@ -85,11 +85,11 @@ flutter:
         - asset: lib/assets/fonts/Pretendard-Black.ttf
           weight: 900
   assets:
-  - lib/assets/banner/AD_1.png
-  - lib/assets/banner/AD_2.png
-  - lib/assets/banner/AD_3.png
-  - lib/assets/banner/AD_4.png
-  - lib/assets/banner/AD_5.png
+  - lib/assets/banner/banner1.png
+  - lib/assets/banner/banner2.png
+  - lib/assets/banner/banner3.png
+  - lib/assets/banner/banner4.png
+  - lib/assets/banner/banner5.png
   - lib/assets/banner/detail_test.png
   - lib/assets/logo/location.gif
   - lib/assets/logo/dogType.png
